@@ -1,0 +1,53 @@
+
+=========================REPORT=============================================
+
+
+The practice project given to us was about manipulating data structures with common operations on it. To achieve the goal, I coded in c++ o ubuntu 20.04 (Sublime text editor). All the program is in one file with a main menu and fifferent submenus.
+
+First the includes files are:
+
+#include <bits/stdc++.h>
+#include <iostream>
+#include<iomanip>
+using namespace std;
+#include <vector>
+#include <queue> 
+
+This were libraries I used to call some specific methods to perform my operations. Tthen I defined a global constant MAX at 1000 for maximum size of my arrays and vectors. Then, we have the following submenus:
+
+
+1. Managing a Stack
+
+Here we have the different submenus to perform operations on stack. I defined a class Stack whichh attributes are:
+
+a[Max] ------- maximum size of the stack
+stack capacity
+
+Stack methods are push(), pop(), isEmpty, isFull, Display(), and MakeEmpty.
+
+In the main or driver program I create an instance of stack object and manipulate it as wanted by the user.
+
+2. Managing a (circular) queue
+
+Here I did the same for the queue object. I declared a class Queue with its attributes and methods that I call to manipulate each instance of Queue that I create. Here the method of the queue are almost the same as the stack ones except that here we have the methode enqueue and dequeue which respect the principle of FIFO. 
+
+3. Sorting algorithms
+
+Here, I have implemented two sorting algorithms as demanded. The Selection Sort and the Merging sort. To do that, I created two functions respectively to perform each sort. For each case, I ask the user to enter the list of the value he wants to sort. I stock them in an array and proceed with the respective algorithms.
+
+
+4. Searching algorithms
+
+Here, I have implemented two searching algorithms. The Sequential Searh and the Binary Search. Two functions were also written here to search an element e entered by the user himself. I must drop your attention on the fact that in the case of Binary Search the list of input elements is sorted before performing the Binary search algorithm itself as said during the lecture.
+
+
+5. Tree traversals
+
+Here I ask the user to build progressively a complete binary tree with consecutive input elements. For trees, I used structure Node with a helper function that allocates a new node and three methods to perform respectively the traversal of the tree either in InOrder, PreOrder or PostOrder. The structure used here is an dynamic array. Note that I delete manually the instance created to make sure I avoid Bad memory  allocation errors. After that I processed the elements in the driver program.
+
+6. Graph traversals
+
+About graphs, I also used class to manipulate them. I created 2 methods to traverse them either with DFS algorithm or BFS algorithm. I implemented graphs with adjacency matrices and I used an iterative methods to perform BFS and recursive method for DFS 
+
+7. Exit 
+The exit submenu is there to quit the program definitely.
